@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MotywatorCodzienny.MainPage"
+             BackgroundColor="#121212">
+
+    <StackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+
+       
+        <Label
+            Text="Motywator Codzienny"
+            FontSize="28"
+            FontAttributes="Bold"
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+        
+        <Label
+            x:Name="MotivationLabel"
+            Text="Naciśnij przycisk, aby otrzymać motywację"
+            FontSize="18"
+            TextColor="LightGray"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Center" />
+
+        
+        <Button
+            x:Name="MotivateButton"
+            Text="POTRZEBUJĘ MOTYWACJI"
+            FontSize="16"
+            BackgroundColor="#3F51B5"
+            TextColor="White"
+            CornerRadius="10"
+            Clicked="OnMotivateClicked" />
+
+       
+        <Label
+            x:Name="CounterLabel"
+            Text="Ilość otrzymanych motywacji: 0"
+            FontSize="14"
+            TextColor="Gray"
+            HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
